@@ -9,10 +9,16 @@
 import SpriteKit
 
 class GameScene: SKScene {
+    
+    /* Short form access to singleton */
+    let gameManager = GameManager.sharedInstance
+    var myLabel:SKLabelNode!
+    
     override func didMoveToView(view: SKView) {
         /* Setup your scene here */
-        let myLabel = SKLabelNode(fontNamed:"Chalkduster")
-        myLabel.text = "Hello, World!"
+        
+        myLabel = SKLabelNode(fontNamed:"Chalkduster")
+        myLabel.text = "Score: \(gameManager.highScore)"
         myLabel.fontSize = 45
         myLabel.position = CGPoint(x:CGRectGetMidX(self.frame), y:CGRectGetMidY(self.frame))
         
@@ -22,20 +28,10 @@ class GameScene: SKScene {
     override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
        /* Called when a touch begins */
         
-        for touch in touches {
-            let location = touch.locationInNode(self)
+        for _ in touches {
             
-            let sprite = SKSpriteNode(imageNamed:"Spaceship")
-            
-            sprite.xScale = 0.5
-            sprite.yScale = 0.5
-            sprite.position = location
-            
-            let action = SKAction.rotateByAngle(CGFloat(M_PI), duration:1)
-            
-            sprite.runAction(SKAction.repeatActionForever(action))
-            
-            self.addChild(sprite)
+            gameManager.highScore += 1
+            myLabel.text = "Score: \(gameManager.highScore)"
         }
     }
    
