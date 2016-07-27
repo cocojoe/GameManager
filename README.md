@@ -1,5 +1,5 @@
-GameManager
-===========
+# GameManager
+SpriteKit, Swift, Singleton &amp; NSUserDefaults (Example)
 
 Example of using a singleton to manage game data and *NSUserDefaults* to provide data storage.
 
