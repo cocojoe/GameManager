@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5B2E26DB1D4A1B1500887A9E /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B2E26DA1D4A1B1500887A9E /* Character.swift */; };
 		5B4A75601D47DEDE002E364B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B4A755F1D47DEDE002E364B /* AppDelegate.swift */; };
 		5B4A75621D47DEDE002E364B /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 5B4A75611D47DEDE002E364B /* GameScene.sks */; };
 		5B4A75641D47DEDE002E364B /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B4A75631D47DEDE002E364B /* GameScene.swift */; };
@@ -19,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5B2E26DA1D4A1B1500887A9E /* Character.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
 		5B4A755C1D47DEDE002E364B /* GameManager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GameManager.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B4A755F1D47DEDE002E364B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5B4A75611D47DEDE002E364B /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
@@ -43,6 +45,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5B2E26D91D4A1AF900887A9E /* Custom Class */ = {
+			isa = PBXGroup;
+			children = (
+				5B2E26DA1D4A1B1500887A9E /* Character.swift */,
+			);
+			name = "Custom Class";
+			sourceTree = "<group>";
+		};
 		5B4A75531D47DEDE002E364B = {
 			isa = PBXGroup;
 			children = (
@@ -62,6 +72,7 @@
 		5B4A755E1D47DEDE002E364B /* GameManager */ = {
 			isa = PBXGroup;
 			children = (
+				5B2E26D91D4A1AF900887A9E /* Custom Class */,
 				5B4A75751D47F9FF002E364B /* GameManager */,
 				5B4A755F1D47DEDE002E364B /* AppDelegate.swift */,
 				5B4A75611D47DEDE002E364B /* GameScene.sks */,
@@ -115,6 +126,7 @@
 				TargetAttributes = {
 					5B4A755B1D47DEDE002E364B = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = 2NUJ273DRF;
 					};
 				};
 			};
@@ -158,6 +170,7 @@
 				5B4A757A1D47FB11002E364B /* SwiftyUserDefaults.swift in Sources */,
 				5B4A75641D47DEDE002E364B /* GameScene.swift in Sources */,
 				5B4A75771D47FA11002E364B /* GameManager.swift in Sources */,
+				5B2E26DB1D4A1B1500887A9E /* Character.swift in Sources */,
 				5B4A75661D47DEDE002E364B /* GameViewController.swift in Sources */,
 				5B4A75601D47DEDE002E364B /* AppDelegate.swift in Sources */,
 			);
@@ -203,6 +216,7 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer: martin@frostycube.io (LUJEES5TG8)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
@@ -249,6 +263,7 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer: martin@frostycube.io (LUJEES5TG8)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
@@ -274,9 +289,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = GameManager/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.amanhasnoname.GameManager;
+				PRODUCT_BUNDLE_IDENTIFIER = com.frostycube.rivercross;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -285,9 +301,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = GameManager/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.amanhasnoname.GameManager;
+				PRODUCT_BUNDLE_IDENTIFIER = com.frostycube.rivercross;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -311,6 +328,7 @@
 				5B4A75741D47DEDE002E364B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

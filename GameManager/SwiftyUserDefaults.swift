@@ -25,6 +25,7 @@
 import Foundation
 
 public extension NSUserDefaults {
+    
     class Proxy {
         private let defaults: NSUserDefaults
         private let key: String
