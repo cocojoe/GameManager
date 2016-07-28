@@ -1,9 +1,18 @@
 # GameManager
 SpriteKit, Swift, Singleton &amp; NSUserDefaults (Example)
 
-Example of using a singleton to manage game data and *NSUserDefaults* to provide data storage.
+### Outline
+* Touch will increase the high score.  
+* (Save Data) Send the app to the background.
+* (Restore Data) Kill app and relaunch.
+* A new character object will be added to the characters array each time the app is launched.
 
-The *GameManager* high score is displayed on screen, any touch will increase the high score.  
-Send the app to the background, kill it and relaunch to see the new high score restored.
+### Changelog
+July 28, 2016
 
-Uses the handy [SwiftyUserDefaults](https://github.com/radex/SwiftyUserDefaults) to make NSUserDefaults Swifty :)
+Added custom class and implemented *NSCoding* prototcol.
+Converting an array of the custom class to *NSData* to allow for storage/retrieval in *NSUserDefaults*.
+Implemented CustomStringConvertible to singleton for extra debug.
+
+### Notes
+Utilises the awesome [SwiftyUserDefaults](https://github.com/radex/SwiftyUserDefaults) for a Swifty experience.
