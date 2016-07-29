@@ -1,5 +1,5 @@
 # GameManager
-SpriteKit, Swift, Singleton &amp; NSUserDefaults (Example)
+Swift, Singleton, NSCoding, NSData and NSUserDefaults (Example)
 
 ### Outline
 * Touch will increase the high score.  
@@ -12,7 +12,7 @@ July 28, 2016
 
 Added custom class and implemented *NSCoding* prototcol.
 Converting an array of the custom class to *NSData* to allow for storage/retrieval in *NSUserDefaults*.
-Implemented CustomStringConvertible to singleton for extra debug.
+Implemented *CustomStringConvertible* in singleton for easier debug.
 
 ### Notes
 Utilises the awesome [SwiftyUserDefaults](https://github.com/radex/SwiftyUserDefaults) for a Swifty experience.
